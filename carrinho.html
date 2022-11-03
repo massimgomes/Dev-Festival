@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="flex-box">
+                <a href="index.html" class="logo">
+                    <img src="./assets/patinho1.png" alt="logo kanzie dev festival">
+                </a>
+                <nav class="menu">
+                    <ul>
+                        <li>
+                            <a href="/index.html#sobre">Sobre</a>
+                        </li>
+                    </ul>
+                    <a href="carrinho.html" class="btn outline">Quero meu ingresso!</a>
+                    <button>
+                        <img src="./assets/sol.png" alt="modo claro">
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </header>    
+    <section id="carrinho">
+        <div class="container">
+            <div class="flex-box">
+                <div class="left">
+                    <h1 class="title two">Finalizar a compra</h1>
+                    <ul class="ticket-list">
+                        <li class="ticket">
+                            <h3 class="title four">Ingresso para o Kenzie Music Festival</h3>
+                            <div>
+                                <div class="controls">
+                                    <button id="remove-ticket">-</button>
+                                    <span id="number-ticket">1</span>
+                                    <button id="add-ticket">+</button>
+                                </div>
+                                <p class="title three">R$ <span id="ticket-price">90</span>,00 valor total</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <div>
+                        <h2 class="title three pad20-bottom">Preencha os campos</h2>
+                        <form class="form">
+                            <input type="text" name="nome" id="nome" placeholder="Seu nome">
+                            <input type="email" name="email" id="email" placeholder="Seu e-mail">
+                            <button type="submit" id="buy-button" class="btn solid">Finalizar a compra</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="./script.js"></script>
+</html>

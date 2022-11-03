@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #01011C;
+}
+/* global spacing */
+.pad10-top{
+    padding-top: 10px;
+}
+.pad20-top{
+    padding-top: 20px;
+}
+.pad30-top{
+    padding-top: 30px;
+}
+.pad10-bottom{
+    padding-bottom: 10px;
+}
+.pad20-bottom{
+    padding-bottom: 20px;
+}
+.pad30-bottom{
+    padding-bottom: 30px;
+}
+#header{
+    background: #01011C;
+}
+#header .menu ul a{
+    font-family: poppins;
+    font-weight: 400;
+    font-size: 19px;
+    color: #ffffFF;
+    text-transform: uppercase;
+}
+#header .flex-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#header .flex-box nav{
+    display: flex;
+    align-items: center;
+    gap: 36px;
+}
+#header .flex-box .logo img{
+    max-width: 170px;
+}
+/* tipografia */
+.title{
+    font-family: poppins;
+    color: greenyellow;
+    line-height: 1.2;
+}
+.title.one{
+    font-size: 90px;
+    font-weight: 700;
+}
+.title.two{
+    font-size: 60px;
+    font-weight: 700;
+}
+.title.threehalf{
+    font-size: 28px;
+    font-weight: 700;
+}
+.title.three{
+    font-size: 24px;
+    font-weight: 600;
+}
+.title.four{
+    font-size: 16px;
+    font-weight: 600;
+}
+.title.center{
+    text-align: center;
+}
+.content-box p{
+    font-family: poppins;
+    font-size: 19px;
+    font-weight: 400;
+    color: #ffffFF;
+}
+.blue-text{
+    color: #0000FF;
+}
+.light-blue-text{
+    color: #A5A5FF;
+}
+/* Botões */
+.btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: poppins;
+    font-size: 18px;
+    font-weight: 700;
+    height: 60px;
+    padding: 0 30px;
+    border-radius: 255px;
+    background-color: blue;
+    transition: 0.4s;
+}
+.btn.solid:hover{
+    background: #4444d4;
+    border-color: #4444d4;
+}
+.btn.solid{
+    background-color: #0000FF;
+    color: #FFFFFF;
+    border: 2px solid #0000FF;
+}
+.btn.outline:hover{
+    background: #A5A5FF;
+    color: #ffffFF;
+}
+.btn.outline{   
+    background-color: transparent;
+    color: #A5A5FF;
+    border: 2px solid #A5A5FF;
+}
+a{
+    text-decoration: none;
+}
+button{
+    cursor: pointer;
+    background: transparent;
+    border: none;
+}
+.container{
+    padding: 10px;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+#principal{
+    padding: 50px 0;
+}
+#principal div.flex-box{
+    display: flex;
+    align-items: center;
+    gap: 75px;
+}
+#sobre .flex-box{
+    display: flex;
+    align-items: center;
+    gap: 75px;
+}
+#sobre .flex-box .left,
+#sobre .flex-box .right{
+    width: 100%;
+}
+img{
+    max-width: 100%;
+}
+#sobre .flex-box .left img{
+    width: 100%;
+}
+#artistas{
+    padding: 50px 0;
+}
+#artistas ul.artista-list{
+    display: flex;
+    gap: 15px;
+}
+#finalizacao{
+    padding: 50px 0;
+}
+#finalizacao div.flex-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+#finalizacao div.flex-box div.ticket{
+    position: relative;
+    min-width: 700px;
+    min-height: 370px;
+    border: 1px solid #0000FF;
+    border-left-width: 100px;
+    padding: 40px;
+}
+#finalizacao div.flex-box div.ticket img{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+#finalizacao div.flex-box div.ticket div.quantity-box{
+    padding: 20px;
+    margin: 20px 0 0 0;
+    border: 1px solid #FFFFFF;
+}
+#carrinho{
+    padding: 50px 0;
+}
+#carrinho div.flex-box{
+    display: flex;
+    gap: 40px;
+}
+#carrinho div.flex-box div.left{
+    width: 815px;
+}
+#carrinho div.flex-box div.right{
+    max-width: 300px;
+}
+#carrinho div.flex-box .ticket-list{
+    margin-top: 30px;
+}
+#carrinho div.flex-box .ticket-list .ticket{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    border: 1px solid #A5A5FF;
+    border-radius: 25px;
+}
+#carrinho div.flex-box .ticket-list .ticket .controls{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+}
+#carrinho div.flex-box .ticket-list .ticket .controls button{
+    font-family: poppins;
+    font-size: 17px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 29px;
+    height: 29px;
+    color: #FFFFFF;
+    border:2px solid #FFFFFF;
+    border-radius: 255px;
+}
+#carrinho div.flex-box .ticket-list .ticket .controls span{
+    font-family: poppins;
+    font-size: 19px;
+    font-weight: 700;
+    color: #A5A5FF;
+}
+#carrinho div.flex-box .form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+#carrinho div.flex-box .form input{
+    font-family: poppins;
+    font-size: 16px;
+    font-weight: 400;
+    background: transparent;
+    padding: 0 20px;
+    height: 54px;
+    border: 1px solid #A5A5FF;
+    border-radius: 255px;
+}
+#carrinho div.flex-box .form button{
+    margin-top: 30px;
+}
